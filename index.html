@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sonia & Anold - Wedding Ceremony</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body class="locked-scroll">
+    
+    <!-- Entrance Doors -->
+    <div id="door-overlay">
+        <div class="door door-left">
+            <div class="door-panel"></div>
+        </div>
+        <div class="door door-right">
+            <div class="door-panel"></div>
+        </div>
+        
+        <div class="door-lock" id="rose-button">
+            <!-- Premium Rose/Lock SVG -->
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="#C5A059" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="rose-svg">
+                <path d="M12 21.5c-4.4-4-8-7.5-8-12 0-3.3 2.7-6 6-6 1.7 0 3.3.8 4.3 2 1-1.2 2.6-2 4.3-2 3.3 0 6 2.7 6 6 0 4.5-3.6 8-8 12-.4.4-1 .4-1.4 0z" fill="rgba(197, 160, 89, 0.1)"></path>
+                <path d="M12 12c-2.5-1.5-4-3-4-5s1.5-3.5 3-3.5c1 0 2 .5 2.5 1 .5-.5 1.5-1 2.5-1 1.5 0 3 1.5 3 3.5s-1.5 3.5-4 5z"></path>
+                <path d="M12 12c.5 2 1 4 0 6"></path>
+                <path d="M12 18c-1.5 0-3-.5-4-1.5"></path>
+                <path d="M12 18c1.5 0 3-.5 4-1.5"></path>
+            </svg>
+            <p class="unlock-text">Tap to Open</p>
+        </div>
+    </div>
+
+    <!-- Sun Brightness Effect -->
+    <div id="sun-brightness"></div>
+
+    <!-- Main Content wrapper, hidden initially -->
+    <main id="main-content">
+        <!-- Section 1: The Invitation Card -->
+        <section class="card-section">
+            <div class="invitation-wrapper">
+                <div class="top-flower-banner"></div>
+                
+                <div class="invitation-content">
+                    <div class="cross">
+                        <svg width="24" height="36" viewBox="0 0 24 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11 0H13V10H24V12H13V36H11V12H0V10H11V0Z" fill="#C5A059"/>
+                        </svg>
+                    </div>
+                    
+                    <p class="quote">"We love because He first loved us."<br>– 1 John 4:19</p>
+
+                    <p class="intro">With hearts full of joy and gratitude to God, we,</p>
+                    
+                    <div class="parents-section">
+                        <p class="parents-name">Mr. Chacko Joseph & Mrs. Rosamma Chacko</p>
+                        <p class="address">(Karackattu House, Kollamula)</p>
+                    </div>
+
+                    <p class="invitation-text">joyfully invite you to witness & celebrate<br>the Wedding Ceremony of<br>our beloved daughter</p>
+
+                    <h1 class="bride">Sonia Ann Chacko</h1>
+
+                    <div class="with-section">
+                        <span class="line"></span><span class="with-text">with</span><span class="line"></span>
+                    </div>
+
+                    <h1 class="groom">Anold Pious</h1>
+
+                    <div class="son-of-section">
+                        <span class="line"></span><span class="son-of-text">Son of</span><span class="line"></span>
+                    </div>
+
+                    <div class="parents-section groom-parents">
+                        <p class="parents-name">Mr. Pious Devasia & Mrs. Molly Pious</p>
+                        <p class="address">(Charattuvayalil House, Ezhukumvayal)</p>
+                    </div>
+
+                    <div class="divider-ornament bottom">
+                        <svg width="100" height="15" viewBox="0 0 100 15" fill="none">
+                            <path d="M50 7.5C45 2 35 2 35 7.5C35 13 45 13 50 7.5ZM50 7.5C55 2 65 2 65 7.5C65 13 55 13 50 7.5Z" stroke="var(--accent-color)" stroke-width="1.5"/>
+                            <line x1="0" y1="7.5" x2="35" y2="7.5" stroke="var(--accent-color)" stroke-width="1"/>
+                            <line x1="65" y1="7.5" x2="100" y2="7.5" stroke="var(--accent-color)" stroke-width="1"/>
+                        </svg>
+                    </div>
+
+                    <p class="footer-text">Your presence & prayers are a blessing to us.</p>
+                </div>
+                <div class="scroll-indicator">
+                    <span>Swipe Down</span>
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 13l5 5 5-5M7 6l5 5 5-5"/></svg>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: Scratch Off Date -->
+        <section class="interactive-section scratch-section">
+            <h2 class="section-title">Save The Date</h2>
+            <p class="section-subtitle">Scratch below to reveal</p>
+            <div class="scratch-container" id="scratch-container">
+                <!-- Underneath text -->
+                <div class="scratch-reveal">
+                    <h3>17 May 2026</h3>
+                    <p>Sunday</p>
+                </div>
+                <canvas id="scratch-canvas"></canvas>
+            </div>
+        </section>
+
+        <!-- Section 3: Countdown to Forever -->
+        <section class="interactive-section countdown-section">
+            <h2 class="section-title">Countdown to Forever</h2>
+            <div class="countdown-grid" id="countdown">
+                <div class="time-box"><span id="cd-days">00</span><p>Days</p></div>
+                <div class="time-box"><span id="cd-hours">00</span><p>Hours</p></div>
+                <div class="time-box"><span id="cd-mins">00</span><p>Mins</p></div>
+                <div class="time-box"><span id="cd-secs">00</span><p>Secs</p></div>
+            </div>
+        </section>
+
+        <!-- Photo Booth Section -->
+        <section class="interactive-section photo-booth-section">
+            <div class="polaroid-wrapper">
+                <div class="polaroid">
+                    <img src="file:///C:/Users/edwin/.gemini/antigravity/brain/782f629f-c037-45cd-aa4a-7e9485d98c2b/media__1777823523247.png" alt="Couple Photo">
+                    <div class="polaroid-caption">Sonia & Anold</div>
+                    <div class="polaroid-subcaption">Save The Date</div>
+                    <div class="polaroid-date">17.04.26</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Program Chart -->
+        <section class="interactive-section program-section">
+            <h2 class="section-title">Program of Events</h2>
+            <div class="timeline-alternating">
+                
+                <!-- Item 1: Text Left, Icon Right -->
+                <div class="timeline-alt-item left-item">
+                    <div class="alt-content">
+                        <div class="alt-time">11:00 AM</div>
+                        <div class="alt-divider"><span class="heart-icon">♥</span></div>
+                        <h4 class="alt-title">WEDDING CEREMONY</h4>
+                        <p class="alt-location">AT CHURCH</p>
+                    </div>
+                    <div class="alt-dot"></div>
+                    <div class="alt-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="8.5" cy="15.5" r="4.5"></circle>
+                            <circle cx="15.5" cy="15.5" r="4.5"></circle>
+                            <path d="M8.5 11a4.5 4.5 0 0 1 7 0"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Item 2: Icon Left, Text Right -->
+                <div class="timeline-alt-item right-item">
+                    <div class="alt-icon">
+                        <svg viewBox="0 0 24 24" width="36" height="36" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <!-- Plate -->
+                            <circle cx="12" cy="12" r="5"></circle>
+                            <!-- Fork -->
+                            <path d="M5 4v4c0 1.1-.9 2-2 2H2V4"></path>
+                            <path d="M3.5 10v10"></path>
+                            <!-- Knife -->
+                            <path d="M19 4v7h3V4c0-1-1-2-2-2s-1 1-1 2z"></path>
+                            <path d="M20.5 11v9"></path>
+                        </svg>
+                    </div>
+                    <div class="alt-dot"></div>
+                    <div class="alt-content">
+                        <div class="alt-time">1:00 PM</div>
+                        <div class="alt-divider"><span class="heart-icon">♥</span></div>
+                        <h4 class="alt-title">RECEPTION</h4>
+                        <p class="alt-location">AT PARISH HALL</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Section 5: Venue Location -->
+        <section class="interactive-section venue-section">
+            <h2 class="section-title">Venue Location</h2>
+            <div class="venue-card">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--gold-accent)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                <h3>Nithyasahaya Matha Church</h3>
+                <p>Ezhukumvayal, Kerala</p>
+                <a href="https://maps.app.goo.gl/4QvniBcZzHuV5ReB7?g_st=aw" target="_blank" class="map-btn">Open in Maps</a>
+            </div>
+        </section>
+        
+        <footer>Made with Love</footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
