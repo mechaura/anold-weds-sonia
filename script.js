@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     ctx.font = "italic 16px Arial";
-    ctx.fillStyle = "rgba(255,255,255,0.5)";
+    ctx.fillStyle = "black";
     ctx.textAlign = "center";
     ctx.fillText("Scratch Here", canvas.width/2, canvas.height/2);
 
