@@ -211,24 +211,6 @@ body.locked-scroll {
     z-index: 2;
 }
 
-.top-flower-banner {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100px;
-    background-image: url('flower-banner.jpg');
-    background-size: cover;
-    background-position: top center;
-    background-repeat: no-repeat;
-    opacity: 0.5;
-    z-index: 5;
-    pointer-events: none;
-    mix-blend-mode: multiply;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    transform: scaleX(-1);
-}
 
 .invitation-content {
     position: relative;
@@ -553,46 +535,4 @@ footer {
     letter-spacing: 1px;
 }
 
-/* Mobile Device Mock-up View for Desktop */
-@media (min-width: 500px) {
-    html {
-        background-color: #222;
-        background-image: radial-gradient(circle at center, #333 0%, #111 100%);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh;
-        overflow: hidden; /* Prevent html level scroll */
-    }
 
-    body {
-        width: 390px !important;
-        height: 844px !important;
-        max-height: 96vh !important;
-        position: relative !important;
-        margin: auto !important;
-        background-color: var(--bg-color) !important;
-        border: 12px solid #0f0f0f;
-        border-radius: 40px;
-        box-shadow: 0 25px 60px rgba(0,0,0,0.8), inset 0 0 0 4px #2a2a2a;
-        transform: translateZ(0); /* Crucial: makes body the containing block for fixed positioning */
-        overflow-x: hidden !important;
-        overflow-y: auto !important;
-        scrollbar-width: none; /* Firefox native scrollbar hide */
-    }
-
-    body::-webkit-scrollbar {
-        display: none; /* Hide scrollbar for Chrome/Safari */
-    }
-
-    body.locked-scroll {
-        overflow-y: hidden !important;
-        height: 844px !important;
-        max-height: 96vh !important;
-    }
-
-    /* Round the edges of the absolute full screen overlays to fit the physical frame */
-    #door-overlay {
-        border-radius: 28px;
-    }
-}
